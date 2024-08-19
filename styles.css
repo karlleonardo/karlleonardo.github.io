@@ -1,0 +1,492 @@
+@font-face {
+    font-family: 'Carmorant Garamond';
+    src: url('assets/fonts/cormorant-garamond/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('assets/fonts/jost-3/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lusitana';
+    src: url('assets/fonts/lusitana/Lusitana-Regular.ttf') format('truetype');
+}
+
+/* Basic Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Carmorant Garamond';
+}
+
+/* Styles for the whole page */
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f3e8da;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    position: relative;
+    overflow-x: hidden;
+}
+
+.logo-container {
+    margin-right: 50px;
+}
+
+/* Header styles */
+header {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 1px;
+    width: 100%;
+    font-family: 'Lusitana';
+    z-index: 1;
+}
+
+.header-nav {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cart {
+    width: 44px;
+    height: 44px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 96px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.cart span {
+    background: black;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    font-family: 'Jost';
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: #333; */
+
+}
+
+nav ul li {
+    margin: 0;
+    padding-top: 18px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: #ead6ba;
+}
+
+/* Main content styles */
+.main {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: url("assets/images/bg.png") no-repeat center center fixed; /* Center the background */
+    background-size: cover; /* Make the background cover the whole div */
+}
+
+.order-now {
+    font-family: 'Lusitana';
+    position: absolute;
+    right: -51px;
+    color: #CF8C0B;
+    background: rgba(207, 140, 11, 0.1);
+    height: 48px;
+    width: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    transform: rotate(270deg);
+    top: 180px;
+}
+
+.pastry-bg-1 {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+}
+.pastry-bg-2 {
+    position: absolute;
+    left: 639px;
+    top: 0px;
+}
+.pastry-bg-3 {
+    position: absolute;
+    right: -2px;
+    top: 26px;
+}
+.pastry-bg-4 {
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+.pastry-bg-5 {
+    position: absolute;
+    right: 0px;
+    bottom: -4px;
+}
+
+.content {
+    text-align: center;
+    font-size: 16px;
+    width: 735px;
+    padding-top: 60px;
+    /* height: 100%; */
+}
+
+.bonjour-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonjour-section hr {
+    border: none;
+    height: 1px;
+    background-color: #cd9420;
+    width: 14px;
+    margin: 0px 10px;
+
+}
+
+.content h1 {
+    font-size: 96px;
+    font-weight: 100;
+    padding-bottom: 12px;
+    padding-top: 20px;
+    line-height: 1;
+}
+
+.content p {
+    color: #cd9420;
+    font-size: 20px;
+    font-family: 'Carmorant Garamond';
+}
+
+.content h4 {
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Jost";
+    margin-top: 32px;
+    margin-bottom: 32px;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0px 1px #a1a1a1d9;
+}
+
+.content button {
+    border: 1px solid #cd9420;
+    background: #ead6ba;
+    text-shadow: 1px 1px white;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 20px;
+    width: 196px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.btn-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-span img {
+    margin-left: 8px;
+}
+
+.shop {
+    /* height: 100vh; */
+    background-color: #fffcf7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 180px;
+}
+
+.shop-content {
+    text-align: center;
+    font-size: 16px;
+    width: 745px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.shop-content .title-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.title-bg {
+    width: 100%;
+    width: 10;
+    height: 28px;
+    background: #f8efe0;
+    top: 51px;
+    position: absolute;
+}
+
+.shop-content h1 {
+    font-size: 76px;
+    font-weight: 100;
+    padding-bottom: 18px;
+    padding-top: 20px;
+    line-height: 1;
+    z-index: 1;
+}
+
+.shop-content p {
+    color: #cd9420;
+    font-size: 20px;
+    font-family: 'Jost';
+}
+
+.shop-content h4 {
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Jost';
+    margin-top: 6px;
+    margin-bottom: 14px;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0px 1px #a1a1a1d9;
+}
+
+.follow-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.follow-us hr {
+    border: none;
+    height: 1px;
+    background-color: #cd9420;
+    width: 74px;
+    margin: 0px 16px;
+}
+
+.facebook-icon {
+    margin-right: 10px;
+}
+
+#pastries {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px;
+    padding-bottom: 180px;
+    margin-top: 100px;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#pastries::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.item {
+    margin-right: 30px;
+    font-family: 'Carmorant Garamond';
+}
+
+.item h3 {
+    font-weight: 500;
+    text-shadow: 1px 0px 1px #a1a1a1d9;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.item p {
+    font-family: 'Jost';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.image-container {
+    background-color: #f3e8da;
+    width: 480px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .image-container img {
+    height: 300px;
+    width: 320px;
+} */
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, sans-serif;
+    margin-top: 24px;
+    position: relative;
+}
+
+.select-container select {
+    background: transparent;
+    width: 145px;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 0;
+    height: 40px;
+    appearance: none;
+    padding-left: 24px;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Jost';
+}
+
+.select-container select:focus {
+    border: none !important;
+}
+
+.select-container {
+    width: 143px;
+    height: 40px;
+    padding: 0px 10px;
+    overflow: hidden;
+    background: url("assets/images/down-arrow-icon.png") no-repeat right #fff;
+    background-size: 12px 12px;
+    background-position: calc(100% - 30px) center;
+    border: none;
+    background-color: #faf1e0;
+    border-radius: 56px;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 95px;
+    background-color: #faf1e0;
+    border-radius: 56px;
+    margin-left: 10px;
+}
+
+.counter-container p {
+    margin: 0px 6px;
+    font-weight: 600;
+    font-family: 'Jost';
+    font-size: 18px;
+}
+
+.counter-container button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #cd9420;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decrement-btn {
+    font-size: 28px !important;
+    padding-bottom: 4px;
+}
+
+.total {
+    position: absolute;
+    right: 2px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Jost';
+}
+
+.add-to-cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    background-color: #faf1e0;
+    margin-top: 10px;
+}
+
+.add-to-cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.add-to-cart p {
+    font-family: 'Jost';
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 2px;
+}
